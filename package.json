@@ -1,0 +1,33 @@
+{
+	"name": "@fundamend/action-release-it",
+	"version": "0.0.0",
+	"dependencies": {},
+	"devDependencies": {
+		"@fundamend/confif-eslint": "^0.0.0",
+		"@fundamend/config-lint-staged": "^0.0.0",
+		"@fundamend/config-prettier": "^0.0.0",
+		"@fundamend/config-release-it": "^0.0.0",
+		"@fundamend/config-remark": "^0.0.0",
+		"lint-staged": "^10.2.11",
+		"prettier": "^2.0.5",
+		"release-it": "^14.4.1",
+		"remark-cli": "^9.0.0",
+		"rimraf": "^3.0.2"
+	},
+	"license": "MIT",
+	"main": "src/index.js",
+	"scripts": {
+		"clean": "rimraf *.log",
+		"clean:all": "yarn clean && rimraf node_modules",
+		"lint": "yarn lint:js && yarn lint:md && yarn lint:formatting",
+		"lint:fix": "yarn lint:js:fix && yarn lint:md:fix && yarn lint:formatting:fix",
+		"lint:formatting": "prettier **/*.* --check",
+		"lint:formatting:fix": "prettier **/*.* --write",
+		"lint:js": "eslint **/*.js",
+		"lint:js:fix": "eslint **/*.js --fix",
+		"lint:md": "remark . --ignore-path .gitignore",
+		"lint:md:fix": "remark . --ignore-path .gitignore --output",
+		"precommit": "lint-staged",
+		"release": "release-it --dry-run"
+	}
+}

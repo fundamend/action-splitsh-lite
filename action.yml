@@ -1,0 +1,26 @@
+name: 'Splitsh'
+
+description: 'Synchronises a subtree repository using splitsh-lite'
+
+inputs:
+  source-directory:
+    description: 'Prefix for the split'
+    required: true
+  target-repository:
+    description: 'Full name of the target repository (e.g. owner/repository)'
+    required: true
+  target-branch:
+    description: 'Branch name to sync the split to'
+    required: false
+    default: 'main'
+  target-deploy-key:
+    description: 'Deploy key for the target repository'
+    required: true
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+
+branding:
+  icon: git-branch
+  color: green
