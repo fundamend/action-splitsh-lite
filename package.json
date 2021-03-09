@@ -28,6 +28,6 @@
 		"lint:md": "remark . --ignore-path .gitignore",
 		"lint:md:fix": "remark . --ignore-path .gitignore --output",
 		"precommit": "lint-staged",
-		"release": "release-it --dry-run"
+		"release": "release-it"
 	}
 }
