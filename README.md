@@ -23,9 +23,9 @@ jobs:
         with:
           fetch-depth: 0
       - name: Synchronize sub-repo
-        uses: fundamend/action-splitsh-lite@master
+        uses: fundamend/action-splitsh-lite@main
         with:
-					source-directory: 'src/sub-repo/'
+          source-directory: 'src/sub-repo/'
           target-ropisotry: 'owner/sub-repo'
           target-deploy-key: ${{ secrets.GITHUB_SSH_KEY }}
 ```

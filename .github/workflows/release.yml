@@ -11,6 +11,6 @@ jobs:
         with:
           fetch-depth: 0
       - name: Release
-        uses: fundamend/action-release-it@master
+        uses: fundamend/action-release-it@main
         with:
           git-user-email: github@mail.decouplr.com
