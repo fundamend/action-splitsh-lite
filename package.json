@@ -3,7 +3,7 @@
 	"version": "0.0.0",
 	"dependencies": {},
 	"devDependencies": {
-		"@fundamend/confif-eslint": "^0.0.0",
+		"@fundamend/config-eslint": "^0.0.0",
 		"@fundamend/config-lint-staged": "^0.0.0",
 		"@fundamend/config-prettier": "^0.0.0",
 		"@fundamend/config-release-it": "^0.0.0",
