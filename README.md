@@ -1,7 +1,5 @@
 # action-splitsh-lite
 
-Synchronizes a split repository using [splitsh-lite]
-
 _action-splitsh-lite_ is a workflow for [GitHub Actions] used by the [fundamend.dev] ecosystem.
 It splits and synchronizes sub-directories of a monorepo into their own public repositories using [splitsh-lite].
 
