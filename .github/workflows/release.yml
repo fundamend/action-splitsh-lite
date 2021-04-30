@@ -34,6 +34,7 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Checkout
+        if: steps.version.outputs.changed == 'true'
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
