@@ -24,7 +24,7 @@ jobs:
         uses: fundamend/action-splitsh-lite@main
         with:
           source-directory: 'src/sub-repo/'
-          target-ropisotry: 'owner/sub-repo'
+          target-repository: 'owner/sub-repo'
           target-deploy-key: ${{ secrets.GITHUB_SSH_KEY }}
 ```
 
