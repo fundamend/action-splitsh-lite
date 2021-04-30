@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 
-COPY root /root
+COPY src /src
 
 RUN apt-get update && \
     apt-get install -y \
