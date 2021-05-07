@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:20.04
 
 COPY src /src
 
@@ -10,4 +10,5 @@ RUN apt-get update && \
     wget https://github.com/splitsh/lite/releases/download/v1.0.1/lite_linux_amd64.tar.gz && \
     tar -zxpf lite_linux_amd64.tar.gz --directory /usr/local/bin/
 
+RUN chmod +x /src/entrypoint.sh
 ENTRYPOINT ["/src/entrypoint.sh"]
