@@ -3,17 +3,17 @@ name: 'Splitsh'
 description: 'Synchronises a subtree repository using splitsh-lite'
 
 inputs:
-  source-directory:
+  source_directory:
     description: 'Prefix for the split'
     required: true
-  target-repository:
+  target_repository:
     description: 'Full name of the target repository (e.g. owner/repository)'
     required: true
-  target-branch:
+  target_branch:
     description: 'Branch name to sync the split to'
     required: false
     default: 'main'
-  target-deploy-key:
+  target_deploy_key:
     description: 'Deploy key for the target repository'
     required: true
 
