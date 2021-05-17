@@ -1,6 +1,6 @@
 {
 	"name": "@fundamend/action-splitsh-lite",
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"devDependencies": {
 		"@fundamend/config-eslint": "*",
 		"@fundamend/config-lint-staged": "*",
