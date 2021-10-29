@@ -16,4 +16,4 @@ All notable changes to this project will be documented in this file. See [standa
 - use correct directory ([f9e67ab](https://github.com/fundamend/fundamend/commit/f9e67ab71734b4443af18fc1539db2c0bd207781))
 - use correct input parameter name for target repository ([8277e67](https://github.com/fundamend/fundamend/commit/8277e670e047afed852f8ff7d4b0b4398b74e474))
 - use correct package name ([befeb40](https://github.com/fundamend/fundamend/commit/befeb4070306bea4be66c90cdac43b50935eaebc))
-- use correct word seperators for input parameters ([e5a63b4](https://github.com/fundamend/fundamend/commit/e5a63b46cb048f14840fd1be9eff263dfe77ace0))
+- use correct word separators for input parameters ([e5a63b4](https://github.com/fundamend/fundamend/commit/e5a63b46cb048f14840fd1be9eff263dfe77ace0))
