@@ -1,9 +1,9 @@
-const config = require('@fundamend/config-remark');
+import config from '@fundamend/config-remark';
 
 const plugins = [config];
 const settings = {};
 
-module.exports = {
+export default {
 	plugins: plugins,
 	settings: settings
 };

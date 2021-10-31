@@ -11,7 +11,7 @@
 		"cross-env": "^7.0.3",
 		"lint-staged": "^11.0.0",
 		"prettier": "^2.0.5",
-		"remark-cli": "^9.0.0",
+		"remark-cli": "^10.0.0",
 		"rimraf": "^3.0.2",
 		"standard-version": "^9.2.0"
 	},
@@ -28,11 +28,12 @@
 		"lint:fix": "yarn lint:js:fix && yarn lint:md:fix && yarn lint:formatting:fix",
 		"lint:formatting": "prettier **/*.* --check",
 		"lint:formatting:fix": "prettier **/*.* --write",
-		"lint:js": "eslint **/*.js",
-		"lint:js:fix": "eslint **/*.js --fix",
+		"lint:js": "eslint . --ext .js,.cjs",
+		"lint:js:fix": "eslint . --ext .js,.cjs --fix",
 		"lint:md": "remark . --ignore-path .gitignore",
 		"lint:md:fix": "remark . --ignore-path .gitignore --output",
 		"precommit": "lint-staged",
 		"release:prepare": "cross-env-shell \"standard-version -t $npm_package_name@\""
-	}
+	},
+	"type": "module"
 }
