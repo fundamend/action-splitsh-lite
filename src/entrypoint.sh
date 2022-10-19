@@ -1,5 +1,6 @@
 #!/bin/bash
 
+echo "git config --global --add safe.directory $GITHUB_WORKSPACE"
 git config --global --add safe.directory "$GITHUB_WORKSPACE"
 
 ssh-keyscan github.com > /root/.ssh/known_hosts
