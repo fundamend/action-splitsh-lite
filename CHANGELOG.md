@@ -2,6 +2,22 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.1](https://github.com/fundamend/fundamend/compare/@fundamend/action-splitsh-lite@0.1.0...@fundamend/action-splitsh-lite@0.1.1) (2022-10-19)
+
+
+### Features
+
+* add new package @fundamend/config-svglint ([021aac4](https://github.com/fundamend/fundamend/commit/021aac4ed446d63289200edfd9d1d4cd0b73c70d))
+* add new words to dictionary ([ab68608](https://github.com/fundamend/fundamend/commit/ab68608667ddc46e563e4b31e33f76918ec4690b))
+* add retext-equality and start the switch to pure ESM ([fce0cdc](https://github.com/fundamend/fundamend/commit/fce0cdc04f2a915c4557cf39a5a657d8a6a489e3))
+* upgrade lint-staged and convert to ESM ([06a0db9](https://github.com/fundamend/fundamend/commit/06a0db92d1f724e611fc49b91173e3915a0e5f90))
+
+
+### Bug Fixes
+
+* changelog was not generated correctly due to missing config because of change to ESM ([91f2400](https://github.com/fundamend/fundamend/commit/91f2400980e1f59598a336f4956f0323b857550b))
+* detected dubious ownership error ([5d3ccf4](https://github.com/fundamend/fundamend/commit/5d3ccf4764cec05478c7a85711483be75fd04a79))
+
 ## 0.1.0 (2021-05-17)
 
 ### Features
