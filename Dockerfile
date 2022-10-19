@@ -1,4 +1,4 @@
-FROM ubuntu:20.04
+FROM ubuntu:jammy-20221003
 
 COPY src /root
 
