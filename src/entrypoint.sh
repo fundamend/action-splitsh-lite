@@ -1,5 +1,7 @@
 #!/bin/bash
 
+git config --global --add safe.directory "$GITHUB_WORKSPACE"
+
 ssh-keyscan github.com > /root/.ssh/known_hosts
 echo "${INPUT_TARGET_DEPLOY_KEY}" > /root/.ssh/github
 chmod 0600 /root/.ssh/github
