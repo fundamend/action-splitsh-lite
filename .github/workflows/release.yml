@@ -6,52 +6,7 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
+      - name: Release
+        uses: fundamend/action-monorepo-package-release@main
         with:
-          fetch-depth: 0
-
-      - name: Check Version Change
-        uses: EndBug/version-check@v1
-        id: version
-        with:
-          diff-search: true
-
-      - name: Version Update Detected
-        if: steps.version.outputs.changed == 'true'
-        run: 'echo "Version change found! New version: ${{ steps.version.outputs.version }} (${{ steps.version.outputs.type }})"'
-
-      - name: Install Dependencies
-        if: steps.version.outputs.changed == 'true'
-        shell: bash
-        run: npm install
-
-      - name: Tag
-        if: steps.version.outputs.changed == 'true'
-        uses: fundamend/action-github-tag@main
-        with:
-          tag: ${{ steps.version.outputs.version }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Checkout
-        if: steps.version.outputs.changed == 'true'
-        uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-
-      - name: Create GitHub Release
-        if: steps.version.outputs.changed == 'true'
-        shell: bash
-        env:
-          CONVENTIONAL_GITHUB_RELEASER_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: 'npx conventional-github-releaser --preset conventionalcommits'
-
-      - name: 'Configure NPM'
-        if: steps.version.outputs.changed == 'true'
-        shell: bash
-        run: echo "//registry.npmjs.org/:_authToken="${{ secrets.NPM_TOKEN }}"" > .npmrc
-
-      - name: Publish to NPM
-        if: steps.version.outputs.changed == 'true'
-        shell: bash
-        run: npm publish
