@@ -30,12 +30,12 @@ jobs:
 
 The action takes the following inputs:
 
-| Key                   | Description                                                                |
-| --------------------- | -------------------------------------------------------------------------- |
-| `source-directory` \* | The source directory in the monorepo that should be split and synchronized |
-| `target-repository` \*| The target repository (including owner)                                    |
-| `target-branch`       | The target branch name (default `main`)                                    |
-| `target-deploy-key` \*| The private key part of a Deploy Key on the target repository              |
+| Key                    | Description                                                                |
+| ---------------------- | -------------------------------------------------------------------------- |
+| `source-directory` \*  | The source directory in the monorepo that should be split and synchronized |
+| `target-repository` \* | The target repository (including owner)                                    |
+| `target-branch`        | The target branch name (default `main`)                                    |
+| `target-deploy-key` \* | The private key part of a Deploy Key on the target repository              |
 
 The \* indicates mandatory input.
 
